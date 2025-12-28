@@ -1,4 +1,4 @@
-import { Filter, BarChart2, BookOpen, Search } from 'lucide-react';
+import { Filter, BarChart2, BookOpen, Search, FileText } from 'lucide-react';
 import { Tool } from './types';
 
 export const TOOLS: Tool[] = [
@@ -18,6 +18,14 @@ export const TOOLS: Tool[] = [
     url: 'https://journal-selector.pages.dev/',
     icon: BookOpen,
     color: 'purple'
+  },
+  {
+    id: 'splitter',
+    title: 'Context Splitter AI',
+    description: '为大语言模型准备数据。智能分割长文本与CSV文件，轻松适配上下文窗口。',
+    url: 'https://context-splitter.pages.dev/',
+    icon: FileText,
+    color: 'indigo'
   },
   {
     id: 'strategy',
