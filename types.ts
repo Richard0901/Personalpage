@@ -6,7 +6,7 @@ export interface Tool {
   description: string;
   url: string;
   icon: LucideIcon;
-  color: string;
+  color: string; // Now represents a color name like 'emerald', 'blue' instead of full class
   badge?: string;
 }
 

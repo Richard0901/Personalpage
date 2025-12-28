@@ -8,7 +8,7 @@ export const TOOLS: Tool[] = [
     description: '瞬间构建适用于 PubMed 和 Web of Science 等数据库的复杂且语法完美的搜索查询。',
     url: 'https://scholarsearch-gen.pages.dev/',
     icon: Search,
-    color: 'text-amber-400',
+    color: 'amber',
     badge: 'Utility'
   },
   {
@@ -17,7 +17,7 @@ export const TOOLS: Tool[] = [
     description: 'AI 辅助匹配系统，为您找到最适合的期刊，优化影响力与录用率。',
     url: 'https://journal-selector.pages.dev/',
     icon: BookOpen,
-    color: 'text-purple-400'
+    color: 'purple'
   },
   {
     id: 'strategy',
@@ -25,7 +25,7 @@ export const TOOLS: Tool[] = [
     description: '深度分析研究领域的战略布局，揭示趋势、空白及创新机遇。',
     url: 'https://strategic-analysis-of-research-fields.pages.dev/',
     icon: BarChart2,
-    color: 'text-blue-400'
+    color: 'blue'
   },
   {
     id: 'filter',
@@ -33,7 +33,7 @@ export const TOOLS: Tool[] = [
     description: '利用高级过滤标准系统化缩小研究课题范围，识别高潜力学术方向。',
     url: 'https://academic-direction-filter.pages.dev/',
     icon: Filter,
-    color: 'text-emerald-400',
+    color: 'emerald',
     badge: 'Core Tool'
   }
 ];

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             fontFamily: {
@@ -47,17 +48,33 @@
     </script>
     <style>
       body {
-        background-color: #020617;
-        color: #f8fafc;
+        /* Let Tailwind classes handle background */
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
+      
       .glass-card {
-        background: rgba(30, 41, 59, 0.4);
+        /* Light mode default */
+        background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+      }
+      
+      .dark .glass-card {
+        /* Dark mode overrides */
+        background: rgba(30, 41, 59, 0.4);
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
+
       .grid-bg {
         background-size: 40px 40px;
+        /* Light mode grid */
+        background-image: linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+      }
+      
+      .dark .grid-bg {
+        /* Dark mode grid */
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                           linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
       }
